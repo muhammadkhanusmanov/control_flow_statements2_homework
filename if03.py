@@ -14,4 +14,4 @@ def main(a,b,c):
         m = a 
     if (a>c and c>b) or (b>c and c>a):
         m = c
-    return c
+    return m 
