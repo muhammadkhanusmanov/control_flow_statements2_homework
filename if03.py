@@ -8,11 +8,12 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    if (a>b and b>c) or (c>b and b>a):
-        d = b
-    if (b>a and a>c) or (c>a and a>b):
-        d = a 
-    if (a>c and c>b) or (b>c and c>a):
-        d = c
-    return d
-
+   if ((a < b and b < c) or (c < b and b < a)) :
+        return b;
+ 
+    # Checking for a
+    if ((b < a and a < c) or (c < a and a < b)) :
+        return a;
+ 
+    else :
+        return c
